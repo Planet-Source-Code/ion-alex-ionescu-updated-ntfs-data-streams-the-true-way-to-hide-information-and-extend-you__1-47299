@@ -1,0 +1,146 @@
+{\rtf1\ansi\ansicpg1252\uc1\deff0\stshfdbch0\stshfloch0\stshfhich0\stshfbi0\deflang1033\deflangfe1033{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f36\froman\fcharset238\fprq2 Times New Roman CE;}
+{\f37\froman\fcharset204\fprq2 Times New Roman Cyr;}{\f39\froman\fcharset161\fprq2 Times New Roman Greek;}{\f40\froman\fcharset162\fprq2 Times New Roman Tur;}{\f41\froman\fcharset177\fprq2 Times New Roman (Hebrew);}
+{\f42\froman\fcharset178\fprq2 Times New Roman (Arabic);}{\f43\froman\fcharset186\fprq2 Times New Roman Baltic;}{\f44\froman\fcharset163\fprq2 Times New Roman (Vietnamese);}}{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;
+\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;
+\red128\green128\blue128;\red192\green192\blue192;}{\stylesheet{\ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext0 Normal;}{\*\cs10 \additive \ssemihidden 
+Default Paragraph Font;}{\*\ts11\tsrowd\trftsWidthB3\trpaddl108\trpaddr108\trpaddfl3\trpaddft3\trpaddfb3\trpaddfr3\trcbpat1\trcfpat1\tscellwidthfts0\tsvertalt\tsbrdrt\tsbrdrl\tsbrdrb\tsbrdrr\tsbrdrdgl\tsbrdrdgr\tsbrdrh\tsbrdrv 
+\ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \fs20\lang1024\langfe1024\cgrid\langnp1024\langfenp1024 \snext11 \ssemihidden Normal Table;}}{\*\latentstyles\lsdstimax156\lsdlockeddef0}{\*\rsidtbl \rsid544019\rsid747627
+\rsid1900927\rsid2765043\rsid4066918\rsid4484076\rsid5271928\rsid5975341\rsid7805664\rsid8855967\rsid8990893\rsid9178534\rsid10232875\rsid10380735\rsid11874787\rsid12397210\rsid12912947\rsid14697889\rsid15344691\rsid15419076\rsid16078836\rsid16086074}
+{\*\generator Microsoft Word 11.0.5329;}{\info{\title NTFS Alternate Data Streams (ADS)}{\author Alex Ionescu}{\operator Alex Ionescu}{\creatim\yr2003\mo8\dy10\hr23\min29}{\revtim\yr2003\mo8\dy10\hr23\min34}{\version3}{\edmins1}{\nofpages5}{\nofwords1907}
+{\nofchars10876}{\*\company Relsoft}{\nofcharsws12758}{\vern24683}}\widowctrl\ftnbj\aenddoc\noxlattoyen\expshrtn\noultrlspc\dntblnsbdb\nospaceforul\hyphcaps0\formshade\horzdoc\dgmargin\dghspace180\dgvspace180\dghorigin1800\dgvorigin1440\dghshow1\dgvshow1
+\jexpand\viewkind1\viewscale100\pgbrdrhead\pgbrdrfoot\splytwnine\ftnlytwnine\htmautsp\nolnhtadjtbl\useltbaln\alntblind\lytcalctblwd\lyttblrtgr\lnbrkrule\nobrkwrptbl\snaptogridincell\allowfieldendsel\wrppunct
+\asianbrkrule\rsidroot5271928\newtblstyruls\nogrowautofit \fet0\sectd \linex0\headery708\footery708\colsx708\endnhere\sectlinegrid360\sectdefaultcl\sftnbj {\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl2
+\pnucltr\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang {\pntxta )}}{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl6
+\pnlcltr\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl8\pnlcltr\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang 
+{\pntxtb (}{\pntxta )}}\pard\plain \ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\insrsid12912947 \'a9 2003 Alex Ionescu.
+\par If you liked this article/code please vote for it: }{\insrsid12912947\charrsid12912947 http://www.planetsourcecode.com/vb/default.asp?lngCId=47299&lngWId=1
+\par }{\b\insrsid12912947 
+\par }{\b\insrsid5271928 NTFS Alternate Data Streams (ADS)
+\par }{\i\insrsid5271928\charrsid5271928 What they are, and what they mean for you.
+\par }{\insrsid5271928 
+\par }{\b\insrsid5271928 1. Introduction
+\par 
+\par }\pard \qj \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid5271928 {\insrsid5271928 
+To properly introduce the insertion of ADS support in NTFS, which started with Windows NT 3.1, we must first take a look in the Macintosh world. As some of you might know, Macintosh files do not generally have an extension. Yet, the OS is capable of recog
+nizing who made the application and properly execute it (along with coloring the file based on your settings or other Mac features). This is possible because Macintosh files have two \'93forks\'94
+. The resource fork, which contains this information, and the data 
+fork, which contains the executable code itself (as a side note, this has changed in Mac OS X). When Windows NT 3.1 came out, it had compatibility support for AppleTalk, meaning that NT and MacOS users could easily exchange data. This caused a problem how
+ever, since there was no way to copy the resource fork and the data fork of a file directly onto the NT file system. Doing so would only copy the data fork, since the resource fork wasn\rquote 
+t physically in the file, but in a separate stream. (In other words, the data and resource fork don\rquote 
+t occupy the same cluster on disk, or are part of the same contiguous file). Microsoft then had to implement NTFS ADS, which meant that NT would see the resource fork as another stream, and would be able to copy it along with t
+he file onto a Macintosh computer.}{\insrsid2765043  Extremely low-level and inaccessible by most APIs or programs, ADS didn\rquote t become popular until much later.}{\insrsid5271928 
+\par }{\insrsid2765043 
+\par }{\b\insrsid2765043 2. The dawn of ADS
+\par 
+\par }{\insrsid2765043 With Windows NT 4, ADS took on a more important place in the heart of the NT OS. NT 4 started supporting Hard Links (Hard Links is something from the Unix world, it\rquote s the ability to logically \'93map\'94
+ a file or folder to another one. For example, c:\\mymusic\\mp3\\alex\\rock\\heavy\\2002 can be mapped to C:\\Heavy Rock 2002. While this seems much like a sho
+rtcut, a shortcut is an extra file that the Shell has to interpret. You cannot directly do file operations on a shortcut, and you can\rquote t use it in the command prompt. A Hard Link is a \'93physical shortcut\'94
+.) and some anti-virus companies started writing checksums in a special ADS. However, no official API was made for Hard Links, and checksum ADS were really rare. This changed in Windows 2000.
+\par 
+\par }{\b\insrsid2765043 3. The golden age of ADS
+\par 
+\par }{\insrsid2765043 Windows 2000 brought a number of new features to NTFS, sparse files, summary information da
+ta, ACLs and the Encrypted File System, and an easy to use API to create hard links. All this information is stored in the ADS of a file. For example, right-clicking on a movie and going to properties allows you to enter information such as \'93
+Author, Keyword, Title\'94
+. This information is not written in the file itself, but in an ADS. Encrypting a file will also create a special ADS. Since ADS was becoming more known, some viruses are also known to exploit ADS. Why? Because Microsoft left a lot of holes in the
+ implementation.
+\par 
+\par }{\b\insrsid2765043 4. What\rquote s an ADS anyways?
+\par 
+\par }{\insrsid2765043 An alternate data stream, as mentioned in the introduction, }{\insrsid7805664 is any kind of data that can be attached TO a file but not IN the file on an NTFS system. The Master File Table of the partition will contain a list of
+ all the data streams that a file contains, and where their physical location on the disk is. Therefore, alternate data streams are not present in the file, but attached to it trough the file table.}{\insrsid4066918 
+ A typical file contains only a single data stream, called $DATA. This is the data contained in the file itself, and is not an ALTERNATE data stream, since it is the data stream itself. }{\insrsid2765043 
+\par }{\insrsid4066918 
+\par The convention that Microsoft chose for file naming is the following: }{\i\insrsid5975341 filename.exte}{\i\insrsid4066918\charrsid4066918 tsion:}{\i\insrsid4066918 alternate}{\i\insrsid4066918\charrsid4066918 datastreamname:$DATA}{\insrsid4066918 
+. When you open a file, by any normal means, you are therefore accessing the $DATA stream. Since there is no alternate data stream, the file system actually opens filename.extension::$DATA. If however this file had an alternate data stream called \'93joe
+\'94, and you wanted to open it, you would have to open filename.extension:joe:$DATA.}{\insrsid5975341  I hope this is clear until now.}{\insrsid4066918 
+\par }{\insrsid5975341 
+\par In the previous paragraphs, I mentioned that an ADS can store Hard Links, Encryption, Summary Information, etc. However, these are the uses that the OS has for an ADS. You, the user, can create an infinity of ADS for your own usage. Let\rquote 
+s see why this is useful.
+\par 
+\par }{\b\insrsid5975341 5. What ADS mean for you
+\par 
+\par }{\insrsid5975341 If you understood everything until now, you have noticed that ADS are not stored in the file itself. You might be asking yourself \'93if I store 1MB worth of text into an ADS of a file, will the file become 1MB bigger?\'94 Here\rquote 
+s the great side about ADS\'85it won\rquote t. Since the data is never stored in the file itself}{\insrsid12397210 , the APIs to retrieve the size of the file will never take into account the ADS you might\rquote 
+ve added (or that the OS added). Just like Explorer will only display and open the $DATA data stream (the file itself), Explorer will only show the size of $DATA (the size of the file itself). Explorer is not exhibiting a bug; any app}{\insrsid10380735 
+lication}{\insrsid12397210  calling the normal Windows API will exhibit the same behavior.}{\insrsid15419076 
+ So what does this mean? It means you can store 2 Gigabytes of data into the ADS of an empty file and that the OS will display the file as empty. Opening this file with notepad will r
+esult in a blank text page, and even a hex editor would display the file as empty. The 2GB would however be shaved off your disk, and would you forget the existence of this ADS, only a reformat would reclaim your space.}{\insrsid5975341 
+\par }{\insrsid15419076 
+\par }{\b\insrsid15419076 6. Small summary
+\par 
+\par }{\insrsid15419076 To review what we\rquote 
+ve learnt till now: An NTFS file is made of data streams. The main data stream, called $DATA is the file itself and can be opened, read, written or otherwise modified by any application. You will never see any mention of this data stream. The second type 
+of data stream is called an alternate data stream, or ADS. Any kind of information can be stored in an ADS, and it will remain invisible to the user. The data will never be seen when opening the file, and the file size of the file will never change. An ex
+ample of an OS-created ADS is the Summary Information you can write about a file. A user can create any number of ADS he wants and store whatever information inside.
+\par }{\insrsid747627 
+\par }{\b\insrsid747627 7. Clarifications (practical example)
+\par 
+\par }{\insrsid747627 I mention that a user will not see an ADS, but that he can create them. I then say that an ADS will be invisible to the user\'85
+what is the point then? You must be wondering, and this chapter will offer an easy example so you can understand better. Suppose that you have hundreds of passwords on numerous sites. You share the computer with your roommate, who isn\rquote 
+t exactly a genius in computers, but would easily find \'93passwords.txt\'94, or even something more \'93subtle\'94.}{\insrsid10232875  Here\rquote s a trick, using ADS, that you can use. First, open notepad and paste some useless readme tex
+t. Save this file to c:\\readme.txt. Now, click on the start menu, then press run, and type \'93notepad c:\\readme.txt:passwords.txt\'94. Press OK. Notepad will ask if you want to create the file, since it\rquote 
+s empty. Of course, Notepad is actually referring to the data stream. Press OK, and then write down your passwords. Close Notepad, and save the file when it asks you. Now for the test. Open c:\\
+readme.txt from explorer, or from Notepad or the Run command. You will see your original readme text, with no mention of your passwords. Check the file size in Explorer or DOS\'85it hasn\rquote t changed. Now go back to the Run command, and type \'93
+notepad c:\\readme.txt:passwords.txt\'94. Notepad will open your passwords. Now, assuming that you delete the Run previously-typed commands, you
+r friend will never have the idea of entering that command. Even if he knew about ADS, how would he know which file you\rquote ve stored it in, or what you\rquote ve called your ADS? If you want, you can also try running \'93notepad c:\\windows\\
+explorer.exe:passwords.txt\'94 and write your information there. Windows and Explorer will run fine, yet your passwords will be linked to explorer.exe. I don\rquote 
+t suggest you do that in this example, since the only way to delete the ADS is to delete the file itself (or use my program\'85)}{\insrsid747627 
+\par }{\insrsid10232875 
+\par }{\b\insrsid10232875 8. }{\b\insrsid11874787 Malicious usage}{\b\insrsid10232875 
+\par }{\b\insrsid11874787 
+\par }{\insrsid11874787 \'93So wait\'85if *I* can store hidden information on my own computer\'85can\rquote t a hacker or a Trojan horse program store information or even executable code in ADS? Can\rquote 
+t a joker create a 5GB file on my computer without me ever finding out?\'94 Unfortunately, the answer to all those questions is yes. Executable code can be placed in an ADS, and even executed, without ever touching the host program. That\rquote s right
+\'85 using API or the \'93Start\'94 command in DOS, you can execute \'93Explorer.exe:Trojan.exe\'94. What this will do is execute the Trojan program, without Explorer ever running. To make matters worse, Windows 2000 displays \'93Explorer.exe\'94
+ in Task Manager, not \'93Trojan.exe\'94. Thankfully, XP has fixed this horrible security bug.}{\insrsid544019  (but it still only shows explorer.exe:Trojan.exe\'85you could call the file something less conspicuous). }{\insrsid8990893 
+This is NOT a tutorial on how to use ADS to hack, so I will not give any details on how to copy executable code or running it. Unfortunately, a Trojan might\rquote ve already done that on your system, or a more computer-savvy \'93friend\'94. Here\rquote 
+s the good news: Using Kernel Native APIs and the Backup APIs, it is possible to rapidly seek out any ADS on your hard drive, as well as read/write to them, or delete them. }{\insrsid15344691 
+\par 
+\par }{\b\insrsid15344691 9. My program}{\b\insrsid15344691\charrsid15344691 
+\par }{\insrsid15344691 
+\par }{\insrsid8990893 The program attached is a fully working example, complete with comments about almost every line. It is written in pure API, so even the Form itself is created using API, not the Visual Basic Designer. I\rquote 
+ve done this for speed, and also to teach you a bit more about API controls. You can see in the screenshot that it doesn\rquote t look bad at all.}{\insrsid16078836 
+ The application is split into modules, so if you simply want to include Stream functionality in your application, you can use the StreamModule.}{\insrsid11874787 
+\par }{\insrsid4484076 
+\par }{\b\insrsid4484076 10. Final notes
+\par 
+\par }{\insrsid4484076 I greatly recommend compiling the application into a Native EXE for much faster speed. It should take less then two minutes to scan your whole disk (It takes me 30 seconds, but I have a fast CPU and HD so I\rquote 
+m estimating). If you find any suspicious ADS (you will 
+be able to see their name) or huge sizes (you will also see the size), you can use the Open button to delete malicious ones, or simply to view/edit the ones you are wondering about. Finally, you can create your own ADS. For security reasons, my program on
+ly allows you to write clear-text ADS, not executable ones.
+\par }{\insrsid16086074 
+\par Enjoy! This is my first big article, so if you find it too hard to understand, please don\rquote t hesitate to write your comment down. If you have any trouble, or any other comment, also feel free to wr
+ite it. I will happily accept any criticism or ideas =) I\rquote m only 17 years old so sor}{\insrsid14697889 ry if my English isn\rquote t spotless (It\rquote s my third language).}{\insrsid16086074 
+\par }{\insrsid9178534 
+\par 
+\par }{\b\insrsid9178534 FAQ (Frequently Asked Questions)
+\par 
+\par 1. }{\b\insrsid1900927 Why can\rquote t t}{\b\insrsid9178534 h}{\b\insrsid1900927 e Message Box }{\b\insrsid9178534 show executable stream}{\b\insrsid1900927 s}{\b\insrsid9178534 ?
+\par 
+\par }{\i\insrsid9178534 As I said before, this project doesn\rquote 
+t support binary streams for security reasons. The module is very clearly written and you can always use different methods to display the buffer containing the data if you wish, after calling ViewStream.
+\par 
+\par }{\b\insrsid9178534 2. Why are there two projects? What\rquote s _NOAPI?
+\par 
+\par }{\i\insrsid9178534 Because some people might just be interested in the StreamModule itself and the framework used to manipulate ADS, I have included a project made with VB\rquote s designer and using
+ OCX files that come with VB. This project has the suffix _NOAPI. While it\rquote s meant for beginners, I strongly recommend even intermediate programmers to look at the API version. It\rquote 
+s much faster because of the list view and status bar being in API.
+\par 
+\par }{\i\insrsid1900927 
+\par 
+\par 
+\par }{\b\insrsid9178534 3. The}{\b\insrsid1900927  }{\b\insrsid9178534 _NOAPI version only contains a form with some code, and the StreamModule\'85}{\b\insrsid1900927  }{\b\insrsid9178534 
+why does it make a bigger EXE then the API version, which has 4 modules filled with code?
+\par 
+\par }{\i\insrsid9178534 Just because VB\rquote s designer hides the code for you doesn\rquote t mean it\rquote s there. My API implementation is faster and cleaner then what VB does in the background. And it needs no OCX files at all.}{
+\i\insrsid9178534\charrsid9178534 
+\par }{\b\insrsid5975341 
+\par }{\b\insrsid9178534 4. I am an advanced programmer or server admin, what are the advantages of using the API version?}{\b\insrsid5975341 
+\par }{\b\insrsid9178534 
+\par }{\i\insrsid9178534 Firstly, you will notice that the scanning is much fas
+ter (almost twice as fast), unless you remove the status bar refresh on each file (but then your application will look hung for two minutes). Secondly, the API version is 36kb, plus the 1MB VB6 runtime. The _NOAPI version is 40kb, plus the 1MB VB6 runtime
+, plus the comdlg32.ocx, plus the comctl32.ocx, all together totaling over 2MB. 
+\par 
+\par Finally, using one of the many API-Call add-ons for VBScript, you can create an automated VBS file that will scan your server or active directory for any streams, based on you
+r criteria, all while showing the same GUI as in my VB example, since it was all created in API.}{\i\insrsid9178534\charrsid9178534 
+\par }}
